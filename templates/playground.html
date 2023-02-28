@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Playground</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+
+        .text_central {
+            text-align: center;
+            color: blueviolet
+        }
+
+        .display_flex {
+            display: flex;
+        }
+
+        .justify_space_evenly {
+            justify-content: space-evenly;
+
+        }
+
+        .box {
+            height: 200px;
+            width: 200px;
+            background-color: blueviolet;
+            border: solid black;
+        }
+        .color_change {
+            background-color:{{color}};
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text_central">Welcome</h1>
+    <div class="display_flex justify_space_evenly">
+        {% for i in range(0,number) %}
+        <div class="box color_change"></div>
+        {% endfor %}
+    </div>
+</body>
+
+</html>
